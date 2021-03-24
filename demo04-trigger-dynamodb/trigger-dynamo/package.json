@@ -1,0 +1,28 @@
+{
+  "name": "trigger-dynamo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "invoke-local": "sls invoke local -f hero-insert --path requests-mock/hero-insert.json",
+    "invoke": "sls invoke -f hero-insert --path requests-mock/hero-insert.json",
+    "invoke-trigger": "sls invoke local -f hero-trigger --path requests-mock/hero-trigger.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alandev2/trigger-dynamo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alandev2/trigger-dynamo/issues"
+  },
+  "homepage": "https://github.com/alandev2/trigger-dynamo#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "aws-sdk": "^2.870.0",
+    "uuid": "^3.3.2"
+  }
+}
